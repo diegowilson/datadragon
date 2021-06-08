@@ -1,0 +1,20 @@
+[package]
+name = "solistener"
+version = "0.1.0"
+authors = ["Diego Wilson <diego.wilson.solis@gmail.com>"]
+edition = "2018"
+default-run = "solistener"
+
+[dependencies]
+base64 = "0.13"
+chrono = { version = "0.4.11", features = ["serde"] }
+clap = "2.33.3"
+gcp-bigquery-client = "0.9"
+num_cpus =  "1"
+serde = "1.0"
+serde_json = "1.0"
+solana-cli-output = { git = "https://github.com/solana-labs/solana" }
+solana-client = { git = "https://github.com/solana-labs/solana" }
+solana-sdk = { git = "https://github.com/solana-labs/solana" }
+solana-transaction-status = { git = "https://github.com/solana-labs/solana" }
+tokio = { version = "1", features = ["full"] }
